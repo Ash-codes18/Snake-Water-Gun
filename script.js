@@ -16,39 +16,50 @@ function random_item(items) {
 while (i < n) {
     i++
     let a = prompt(`Enter your choice : "S" or "W" or "G" `)
-    let c = confirm(`Do you want to change your choice? Your current choice is '${a}'`)
-    if (c) {
-        a = prompt(`Enter your choice : "S" or "W" or "G" `)
-    }
-    if (a == "S") {
+    // let c = confirm(`Do you want to change your choice? Your current choice is '${a}'`)
+    // if (c) {
+    //     a = prompt(`Enter your choice : "S" or "W" or "G" `)
+    // }
+    if (a == "S" || "s") {
         a = "Snake"
     }
-    if (a == "G") {
+    if (a == "G" || "g") {
         a = "Gun"
     }
-    if (a == "W") {
+    if (a == "W" || "w") {
         a = "Water"
     }
     let comp = random_item(arr)
-    console.log(comp)
     while (comp == "Snake") {
         if (a == "Water") {
-            console.log("You have lost!")
             loss.push("lost")
+            document.write(lb)
+            document.write(`Computer's choice : Snake.............Your choice : Water  `)
+            document.write(lb)
+            document.write("Water got drank by the snake...")
+            document.write(lb)
             document.write("You have lost!")
             document.write(lb)
         }
 
         if (a == "Gun") {
-            console.log("You have won!")
             won.push("won")
+            document.write(lb)
+            document.write(`Computer's choice : Snake.............Your choice : Gun  `)
+            document.write(lb)
+            document.write("The Snake got shot by gun...")
+            document.write(lb)
             document.write("You have won!")
             document.write(lb)
         }
 
         if (a == "Snake") {
-            console.log("It's a draw")
             draw.push("draw")
+            document.write(lb)
+            document.write(`Computer's choice : Snake.............Your choice : Snake  `)
+            document.write(lb)
+            document.write("Both players picked snake...")
+            document.write(lb)
             document.write("It's a draw")
             document.write(lb)
         }
@@ -56,22 +67,34 @@ while (i < n) {
     }
     while (comp == "Water") {
         if (a == "Snake") {
-            console.log("You have won!")
             won.push("won")
+            document.write(lb)
+            document.write(`Computer's choice : Water.............Your choice : Snake  `)
+            document.write(lb)
+            document.write("Snake drank the water...")
+            document.write(lb)
             document.write("You have won!")
             document.write(lb)
         }
 
         if (a == "Gun") {
-            console.log("You have lost!")
             loss.push("lost")
+            document.write(lb)
+            document.write(`Computer's choice : Water.............Your choice : Gun  `)
+            document.write(lb)
+            document.write("The gun drowned in water...")
+            document.write(lb)
             document.write("You have lost!")
             document.write(lb)
         }
 
         if (a == "Water") {
-            console.log("It's a draw")
             draw.push("draw")
+            document.write(lb)
+            document.write(`Computer's choice : Water.............Your choice : Water  `)
+            document.write(lb)
+            document.write("Both players picked water...")
+            document.write(lb)
             document.write("It's a draw")
             document.write(lb)
         }
@@ -79,22 +102,34 @@ while (i < n) {
     }
     while (comp == "Gun") {
         if (a == "Snake") {
-            console.log("You have lost!")
             loss.push("lost")
+            document.write(lb)
+            document.write(`Computer's choice : Gun.............Your choice : Snake  `)
+            document.write(lb)
+            document.write("Gun shot the snake...")
+            document.write(lb)
             document.write("You have lost!")
             document.write(lb)
         }
 
         if (a == "Water") {
-            console.log("You have won!")
             won.push("won")
+            document.write(lb)
+            document.write(`Computer's choice : Gun.............Your choice : Water  `)
+            document.write(lb)
+            document.write("Water drowned the gun...")
+            document.write(lb)
             document.write("You have won!")
             document.write(lb)
         }
 
         if (a == "Gun") {
-            console.log("It's a draw")
             draw.push("draw")
+            document.write(lb)
+            document.write(`Computer's choice : Gun.............Your choice : Gun  `)
+            document.write(lb)
+            document.write("Both players picked gun...")
+            document.write(lb)
             document.write("It's a draw")
             document.write(lb)
         }
@@ -109,22 +144,21 @@ document.write(lb)
 document.write(lb)
 document.write(lb)
 document.write(lb)
-console.log("User's Score :",w)
 document.write("User's Score :",w)
 document.write(lb)
-console.log("Computer's Score :",l)
 document.write("Computer's Score :",l)
 document.write(lb)
 document.write(lb)
 document.write("Overall Result :")
 document.write(lb)
 if(w>l){
-    console.log("You have won the game")
-    document.write("You have won the game")
+    document.write("You have won the game 😀 ")
 }
 if(w<l){
-    console.log("You have lost the game")
-    document.write("You have lost the game")
+    document.write("You have lost the game 😭")
+}
+if(w==l){
+    document.write("The match is a draw 😁 ")
 }
 // window.onload = function() {
 //    document.getElementById("myLink").innerHTML=;
