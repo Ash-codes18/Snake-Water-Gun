@@ -1,4 +1,4 @@
-<div>![](https://github.com/Ash-codes18/Snake-Water-Gun/blob/main/assets/SWG.gif)</div>
+![](https://github.com/Ash-codes18/Snake-Water-Gun/blob/main/assets/SWG.gif)
 
 <br><br>
 
