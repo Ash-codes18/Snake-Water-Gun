@@ -1,4 +1,4 @@
-<div><img src="images/main.jpg" ></div>
+<div><img src="assets/SWG.gif" ></div>
 
 <br><br>
 
