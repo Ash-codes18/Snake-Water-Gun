@@ -1,4 +1,4 @@
-<div><img src="assets/SWG.gif" ></div>
+<div>![](https://github.com/Ash-codes18/Snake-Water-Gun/blob/main/assets/SWG.gif)</div>
 
 <br><br>
 
