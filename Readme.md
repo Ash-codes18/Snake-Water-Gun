@@ -1,4 +1,4 @@
-<div><img src="assets/SWG.gif" ></div>
+<div><img src="assets/SWG.mp4" ></div>
 
 <br><br>
 
