@@ -20,16 +20,17 @@ while (i < n) {
     // if (c) {
     //     a = prompt(`Enter your choice : "S" or "W" or "G" `)
     // }
-    if (a == "S" || "s") {
+    if (a == "S" || a== "s") {
         a = "Snake"
     }
-    if (a == "G" || "g") {
+    else if (a == "G" || a=="g") {
         a = "Gun"
     }
-    if (a == "W" || "w") {
+    else if (a == "W" || a=="w") {
         a = "Water"
     }
     let comp = random_item(arr)
+    alert(`Your Choice : "${a}".........Computer's Choice : "${comp}"`)
     while (comp == "Snake") {
         if (a == "Water") {
             loss.push("lost")
@@ -135,7 +136,6 @@ while (i < n) {
         }
         break
     }
-    alert(`Your Choice : "${a}".........Computer's Choice : "${comp}"`)
 }
 let w = (won.length)
 let l = (loss.length)
